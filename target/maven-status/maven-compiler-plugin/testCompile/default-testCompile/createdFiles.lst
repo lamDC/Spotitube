@@ -1,0 +1,5 @@
+oose\dea\controllerTests\TrackControllerTest.class
+oose\dea\DAOTests\LoginDAOTest.class
+oose\dea\controllerTests\LoginControllerTest.class
+oose\dea\controllerTests\PlaylistControllerTest.class
+oose\dea\serviceTests\AuthenticationTest.class
