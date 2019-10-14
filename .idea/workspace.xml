@@ -52,7 +52,7 @@
     <session id="1632156897">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="29" />
+          <entry key="project.closed" value="30" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.17" value="2" />
           <entry key="project.open.time.18" value="2" />
@@ -203,7 +203,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -748,7 +748,7 @@
       <workItem from="1559293563694" duration="12082000" />
       <workItem from="1560410099214" duration="1737000" />
       <workItem from="1570877373428" duration="11124000" />
-      <workItem from="1571072005139" duration="93000" />
+      <workItem from="1571072005139" duration="691000" />
     </task>
     <servers />
   </component>
@@ -785,7 +785,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="180032000" />
+    <option name="totallyTimeSpent" value="180630000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -798,7 +798,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989429" visible="true" weight="0.22281879" />
       <window_info id="Structure" order="1" sideWeight="0.5010571" side_tool="true" weight="0.26644295" />
