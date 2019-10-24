@@ -13,11 +13,6 @@ import java.sql.*;
 @Path("/login")
 public class LoginController {
 
-    private LoginDAO loginDAO;
-
-    @Inject
-    public void setLoginDAO(LoginDAO loginDAO){ this.loginDAO = loginDAO; }
-
     private LoginService loginService;
 
     @Inject
@@ -30,8 +25,7 @@ public class LoginController {
     @Consumes("application/json")
     public Response login(LoginRequestDto request) throws SQLException {
 
-        UserModel userModel = loginDAO.login(request);
-        UserModel usermodel = loginService
+        UserModel userModel = loginService.performFirstLogin(request);
         if("error".equals(userModel.getToken())){
             return Response.status(403).build();
         }

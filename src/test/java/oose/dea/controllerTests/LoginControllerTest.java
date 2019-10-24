@@ -21,7 +21,7 @@ public class LoginControllerTest {
     void setup() throws SQLException {
         loginDAOMock = Mockito.mock(LoginDAO.class);
         sut = new LoginController();
-        sut.setLoginDAO(loginDAOMock);
+       // sut.setLoginDAO(loginDAOMock);
     }
 
     @Test

@@ -1,9 +1,11 @@
 package oose.dea.resources.services;
 
 import oose.dea.resources.dataresources.LoginDAO;
+import oose.dea.resources.dto.LoginRequestDto;
 import oose.dea.resources.models.UserModel;
 
 import javax.inject.Inject;
+import java.sql.SQLException;
 
 public class LoginService {
 
@@ -12,7 +14,7 @@ public class LoginService {
 
     private LoginDAO loginDAO;
 
-    public UserModel performFirstLogin(){
-
+    public UserModel performFirstLogin(LoginRequestDto request) throws SQLException {
+    return loginDAO.login(request);
     }
 }
