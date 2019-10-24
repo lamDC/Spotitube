@@ -63,7 +63,7 @@ public class TokenDAO {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        st.executeQuery();
+        st.execute();
 
     }
 

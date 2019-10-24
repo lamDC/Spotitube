@@ -14,13 +14,19 @@ public class LoginDAO {
     private Connection connection;
 
     @Inject
+    public void setTokenDAO(TokenDAO tokenDAO) {
+        this.tokenDAO = tokenDAO;
+    }
+
+    private TokenDAO tokenDAO;
+
+    @Inject
     public LoginDAO(DatabaseConnection databaseConnection){
         connection = databaseConnection.getConnection();
     }
 
     public UserModel login(LoginRequestDto request) throws SQLException {
         UserModel userModel = new UserModel();
-        TokenDAO tokenDAO = new TokenDAO();
         tokenDAO.generateTokenForUser(request);
 
         ResultSet resultSet = null;

@@ -8,6 +8,7 @@ import java.sql.SQLException;
 public class AuthenticationService {
 
     private TokenDAO tokenDAO;
+
     @Inject
     public void setTokenDAO(TokenDAO tokenDAO){
         this.tokenDAO = tokenDAO;
