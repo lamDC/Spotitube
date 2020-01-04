@@ -5,7 +5,6 @@ import oose.dea.resources.controllers.TrackController;
 import oose.dea.resources.dto.TrackRequestDto;
 import oose.dea.resources.dto.TrackResponseDto;
 import oose.dea.resources.models.TrackModel;
-import oose.dea.resources.services.AuthenticationService;
 import oose.dea.resources.services.AuthorisationService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -21,7 +20,6 @@ public class TrackControllerTest {
 
     private static final int PLAYLIST_ID = 1;
     private static final int TRACK_ID = 3;
-    private AuthenticationService authenticationService;
     private AuthorisationService authorisationService;
     private static final String TOKEN = "7057a9bd-a879-43df-8bec-604ead563e7c";
     private TrackDAO trackDAOMock;
@@ -32,9 +30,7 @@ public class TrackControllerTest {
         trackDAOMock = Mockito.mock(TrackDAO.class);
         trackController = new TrackController();
         trackController.setTrackDAO(trackDAOMock);
-        authenticationService = Mockito.mock(AuthenticationService.class);
         authorisationService = Mockito.mock(AuthorisationService.class);
-        trackController.setAuthenticationService(authenticationService);
         trackController.setAuthorisationService(authorisationService);
 
     }
@@ -45,13 +41,13 @@ public class TrackControllerTest {
         int status = 403;
         String fakeToken = "fakeToken";
 
-        Mockito.when(authenticationService.performAuthentication(fakeToken)).thenReturn(correctToken);
+        Mockito.when(authorisationService.performAuthentication(fakeToken)).thenReturn(correctToken);
 
         //Test
         Response response = trackController.geefTracks(PLAYLIST_ID, fakeToken);
 
         //Verify
-        Mockito.verify(authenticationService).performAuthentication(fakeToken);
+        Mockito.verify(authorisationService).performAuthentication(fakeToken);
         assertEquals(status, response.getStatus());
     }
 
@@ -66,7 +62,7 @@ public class TrackControllerTest {
         boolean expectedReturn = true;
 
         Mockito.when(trackDAOMock.geefBeschikbareTracks(PLAYLIST_ID)).thenReturn(trackResponseDto);
-        Mockito.when(authenticationService.performAuthentication(TOKEN)).thenReturn(expectedReturn);
+        Mockito.when(authorisationService.performAuthentication(TOKEN)).thenReturn(expectedReturn);
 
         //Test
         Response response = trackController.geefTracks(PLAYLIST_ID, TOKEN);
@@ -83,13 +79,13 @@ public class TrackControllerTest {
         int status = 403;
         String fakeToken = "fakeToken";
 
-        Mockito.when(authenticationService.performAuthentication(fakeToken)).thenReturn(correctToken);
+        Mockito.when(authorisationService.performAuthentication(fakeToken)).thenReturn(correctToken);
 
         //Test
         Response response = trackController.tracksVanPlaylist(PLAYLIST_ID, fakeToken);
 
         //Verify
-        Mockito.verify(authenticationService).performAuthentication(fakeToken);
+        Mockito.verify(authorisationService).performAuthentication(fakeToken);
         assertEquals(status, response.getStatus());
     }
 
@@ -104,7 +100,7 @@ public class TrackControllerTest {
         boolean expectedReturn = true;
 
         Mockito.when(trackDAOMock.getTrackVanPlaylist(PLAYLIST_ID)).thenReturn(trackResponseDto);
-        Mockito.when(authenticationService.performAuthentication(TOKEN)).thenReturn(expectedReturn);
+        Mockito.when(authorisationService.performAuthentication(TOKEN)).thenReturn(expectedReturn);
 
         //Test
         Response response = trackController.tracksVanPlaylist(PLAYLIST_ID, TOKEN);

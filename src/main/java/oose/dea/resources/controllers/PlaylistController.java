@@ -3,8 +3,8 @@ package oose.dea.resources.controllers;
 import oose.dea.resources.dataresources.PlaylistDAO;
 import oose.dea.resources.dto.PlaylistRequestDto;
 import oose.dea.resources.dto.PlaylistResponseDto;
-import oose.dea.resources.services.AuthenticationService;
 import oose.dea.resources.services.AuthorisationService;
+import oose.dea.resources.services.PlaylistService;
 
 import javax.inject.Inject;
 import javax.ws.rs.*;
@@ -15,16 +15,14 @@ import java.sql.SQLException;
 public class PlaylistController {
 
     private PlaylistDAO playlistDAO;
-    private AuthenticationService authenticationService;
     private AuthorisationService authorisationService;
+    private PlaylistService playlistService;
 
     @Inject
     public void setPlaylistDAO(PlaylistDAO playlistDAO){ this.playlistDAO = playlistDAO; }
 
     @Inject
-    public void setAuthenticationService(AuthenticationService authenticationService){
-        this.authenticationService = authenticationService;
-    }
+    public void setPlaylistService(PlaylistService playlistService){ this.playlistService = playlistService;}
 
     @Inject
     public void setAuthorisationService(AuthorisationService authorisationService){
@@ -35,8 +33,8 @@ public class PlaylistController {
     @Path("playlists")
     @Produces("application/json")
     public Response Playlist(@QueryParam("token") String token) throws SQLException {
-        if(authenticationService.performAuthentication(token)) {
-            PlaylistResponseDto playlistResponseDto = playlistDAO.getPlaylists();   // deze doorlussen van controller naar service naar dao
+        if(authorisationService.performAuthentication(token)) {
+            PlaylistResponseDto playlistResponseDto = playlistService.performGetPlaylists();   // deze doorlussen van controller naar service naar dao
             return Response.ok().entity(playlistResponseDto).build();
         }
         else {
@@ -49,7 +47,7 @@ public class PlaylistController {
     @Produces("application/json")
     public Response deletePlaylist(@PathParam("id") int id, @QueryParam("token") String token) throws SQLException {
         if(authorisationService.performPlaylistAuthorisation(token, id)){
-            PlaylistResponseDto playlistResponseDto = playlistDAO.deletePlaylistFromDatabase(id);
+            PlaylistResponseDto playlistResponseDto = playlistService.performDeletePlaylistFromDatabase(id);
             return Response.ok().entity(playlistResponseDto).build();
         }
         else {
@@ -63,7 +61,7 @@ public class PlaylistController {
     @Consumes("application/json")
     public Response editPlaylist(@PathParam("id") int id, @QueryParam("token") String token, PlaylistRequestDto request) throws SQLException {
         if(authorisationService.performPlaylistAuthorisation(token, id)) {
-            PlaylistResponseDto playlistResponseDto = playlistDAO.editPlaylist(request, id);
+            PlaylistResponseDto playlistResponseDto = playlistService.performEditPlaylist(request, id);
             return Response.ok().entity(playlistResponseDto).build();
         }
         else {
@@ -75,8 +73,8 @@ public class PlaylistController {
     @Path("playlists")
     @Consumes("application/json")
     public Response addPlaylist(@QueryParam("token") String token, PlaylistRequestDto request) throws SQLException {
-        if(authenticationService.performAuthentication(token)) {
-            PlaylistResponseDto playlistResponseDto = playlistDAO.addPlaylistToDatabase(request, token);
+        if(authorisationService.performAuthentication(token)) {
+            PlaylistResponseDto playlistResponseDto = playlistService.performAddPlaylistToDatabase(request, token);
             return Response.ok().entity(playlistResponseDto).build();
         }
         else {

@@ -3,7 +3,6 @@ package oose.dea.resources.controllers;
 import oose.dea.resources.dataresources.TrackDAO;
 import oose.dea.resources.dto.TrackRequestDto;
 import oose.dea.resources.dto.TrackResponseDto;
-import oose.dea.resources.services.AuthenticationService;
 import oose.dea.resources.services.AuthorisationService;
 
 import javax.inject.Inject;
@@ -15,13 +14,7 @@ import java.sql.SQLException;
 public class TrackController {
 
     private TrackDAO trackDAO;
-    private AuthenticationService authenticationService;
     private AuthorisationService authorisationService;
-
-    @Inject
-    public void setAuthenticationService(AuthenticationService authenticationService) {
-        this.authenticationService = authenticationService;
-    }
 
     @Inject
     public void setAuthorisationService(AuthorisationService authorisationService) {
@@ -37,7 +30,7 @@ public class TrackController {
     @Path("tracks")
     @Produces("application/json")
     public Response geefTracks(@QueryParam("forPlaylist") int id, @QueryParam("token") String token) throws SQLException {
-        if(authenticationService.performAuthentication(token)) {
+        if(authorisationService.performAuthentication(token)) {
             TrackResponseDto trackResponseDto = trackDAO.geefBeschikbareTracks(id);
             return Response.ok().entity(trackResponseDto).build();
         }
@@ -50,7 +43,7 @@ public class TrackController {
     @Path("playlists/{id}/tracks")
     @Produces("application/json")
     public Response tracksVanPlaylist(@PathParam("id") int id, @QueryParam("token") String token) throws SQLException {
-        if(authenticationService.performAuthentication(token)){
+        if(authorisationService.performAuthentication(token)){
             TrackResponseDto trackResponseDto = trackDAO.getTrackVanPlaylist(id);
             return Response.ok().entity(trackResponseDto).build();
         }

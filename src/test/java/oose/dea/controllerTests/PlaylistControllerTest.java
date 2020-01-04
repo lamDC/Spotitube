@@ -8,7 +8,6 @@ import oose.dea.resources.services.AuthorisationService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
-import oose.dea.resources.services.AuthenticationService;
 
 import javax.ws.rs.core.Response;
 import java.sql.SQLException;
@@ -19,7 +18,6 @@ public class PlaylistControllerTest {
     private static final int PLAYLIST_ID = 1;
     private PlaylistController playlistController;
     private PlaylistDAO playlistDAOMock;
-    private AuthenticationService authenticationService;
     private AuthorisationService authorisationService;
     private static final String TOKEN = "7057a9bd-a879-43df-8bec-604ead563e7c";
 
@@ -28,9 +26,7 @@ public class PlaylistControllerTest {
         playlistDAOMock = Mockito.mock(PlaylistDAO.class);
         playlistController = new PlaylistController();
         playlistController.setPlaylistDAO(playlistDAOMock);
-        authenticationService = Mockito.mock(AuthenticationService.class);
         authorisationService = Mockito.mock(AuthorisationService.class);
-        playlistController.setAuthenticationService(authenticationService);
         playlistController.setAuthorisationService(authorisationService);
     }
 
@@ -41,13 +37,13 @@ public class PlaylistControllerTest {
         int status = 403;
         String fakeToken = "fakeToken";
 
-        Mockito.when(authenticationService.performAuthentication(fakeToken)).thenReturn(correctToken);
+        Mockito.when(authorisationService.performAuthentication(fakeToken)).thenReturn(correctToken);
 
         //Test
         Response response = playlistController.Playlist(fakeToken);
 
         //Verify
-        Mockito.verify(authenticationService).performAuthentication(fakeToken);
+        Mockito.verify(authorisationService).performAuthentication(fakeToken);
         assertEquals(status, response.getStatus());
     }
 
@@ -56,7 +52,7 @@ public class PlaylistControllerTest {
         //Setup
         PlaylistResponseDto playlistResponseDto = new PlaylistResponseDto();
 
-        Mockito.when(authenticationService.performAuthentication(TOKEN)).thenReturn(true);
+        Mockito.when(authorisationService.performAuthentication(TOKEN)).thenReturn(true);
         Mockito.when(playlistDAOMock.getPlaylists()).thenReturn(playlistResponseDto);
 
         //Test
@@ -145,13 +141,13 @@ public class PlaylistControllerTest {
         PlaylistRequestDto playlistRequestDto  = new PlaylistRequestDto();
         String fakeToken = "fakeToken";
 
-        Mockito.when(authenticationService.performAuthentication(fakeToken)).thenReturn(correctToken);
+        Mockito.when(authorisationService.performAuthentication(fakeToken)).thenReturn(correctToken);
 
         //Test
         Response response = playlistController.addPlaylist(fakeToken, playlistRequestDto);
 
         //Verify
-        Mockito.verify(authenticationService).performAuthentication(fakeToken);
+        Mockito.verify(authorisationService).performAuthentication(fakeToken);
         assertEquals(status, response.getStatus());
     }
 
@@ -163,7 +159,7 @@ public class PlaylistControllerTest {
         boolean expectedReturn = true;
 
         Mockito.when(playlistDAOMock.addPlaylistToDatabase(playlistRequestDto, TOKEN)).thenReturn(playlistResponseDto);
-        Mockito.when(authenticationService.performAuthentication(TOKEN)).thenReturn(expectedReturn);
+        Mockito.when(authorisationService.performAuthentication(TOKEN)).thenReturn(expectedReturn);
 
         //Test
         Response response = playlistController.addPlaylist(TOKEN, playlistRequestDto);
