@@ -91,11 +91,13 @@ public class TokenDAO {
     }
 
     public boolean playlistAuthorisation(String token, int playlist_id) throws SQLException {
+        String user = getUserByToken(token);
         boolean isTokenVanUser = false;
+
         ResultSet resultSet = null;
         PreparedStatement st = null;
         java.sql.Connection cnEmps = connection;
-        String sql = "SELECT U.* FROM [USER] U INNER JOIN PLAYLIST P ON U.USERNAME = P.USERNAME WHERE PLAYLIST_ID = " + playlist_id;
+        String sql = "SELECT USERNAME, OWNER FROM PLAYLIST WHERE PLAYLIST_ID = " + playlist_id;
 
         try {
             st = cnEmps.prepareStatement(sql);
@@ -103,13 +105,14 @@ public class TokenDAO {
             e.printStackTrace();
         }
         resultSet = st.executeQuery();
-        System.out.println("gaat nog goed");
         while (resultSet.next())
         {
-            boolean owner = resultSet.getBoolean("OWNER");
-            System.out.println(owner);
-            if(owner){
-                isTokenVanUser = true;
+            String playlistUser = resultSet.getString("USERNAME");
+            if(playlistUser.equals(user)){
+                boolean owner = resultSet.getBoolean("OWNER");
+                if(owner){
+                    isTokenVanUser = true;
+                }
             }
         }
         return isTokenVanUser;

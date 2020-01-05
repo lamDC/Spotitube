@@ -8,6 +8,7 @@ import javax.inject.Inject;
 import java.sql.SQLException;
 
 public class PlaylistService {
+    
     @Inject
     public void setLoginDAO(PlaylistDAO playlistDAO){ this.playlistDAO = playlistDAO; }
 
