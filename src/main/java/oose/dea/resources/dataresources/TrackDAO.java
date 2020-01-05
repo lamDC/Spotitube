@@ -44,47 +44,6 @@ public class TrackDAO {
         return trackResponseDto;
     }
 
-//    public ArrayList<TrackModel> leesTrack(String sql) throws SQLException {
-//        ResultSet resultSet = null;
-//        PreparedStatement st = null;
-//        DatabaseConnection connection = new DatabaseConnection();
-//        java.sql.Connection cnEmps = connection.getConnection();
-//        ArrayList<TrackModel> trackModels = new ArrayList<>();
-//
-//        try {
-//            st = cnEmps.prepareStatement(sql);
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
-//
-//        while (resultSet.next())
-//        {
-//            TrackModel trackModel = new TrackModel();
-//            trackModel.setId(resultSet.getInt("TRACK_ID"));
-//            trackModel.setTitle(resultSet.getString("TITLE"));
-//            trackModel.setPerformer(resultSet.getString("PERFORMER"));
-//            trackModel.setDuration(resultSet.getInt("DURATION"));
-//            trackModel.setAlbum(resultSet.getString("ALBUM"));
-//            if(resultSet.getInt("PLAYCOUNT") == 0) {
-//                trackModel.setPlaycount(resultSet.getInt("PLAYCOUNT"));
-//            }
-//            if(resultSet.getString("DESCRIPTION") != null){
-//                trackModel.setDescription(resultSet.getString("DESCRIPTION"));
-//            }
-//            if(resultSet.getString("PUBLICATIONDATE") != null){
-//                trackModel.setPublicationDate(resultSet.getString("PUBLICATIONDATE"));
-//            }
-//            trackModel.setDuration(resultSet.getInt("DURATION"));
-//            if(resultSet.getBoolean("OFFLINEAVAILABLE")){
-//                trackModel.setOfflineAvailable(true);
-//            }
-//            else {
-//                trackModel.setOfflineAvailable(false);
-//            }
-//            trackModels.add(trackModel);
-//        }
-//        return trackModels;
-//    }
 
     public ArrayList<TrackModel> leesTracks(String sql) throws SQLException {
         ResultSet resultSet = null;
@@ -206,6 +165,7 @@ public class TrackDAO {
         trackResponseDto.setTracks(leesTracks(sql));
         return trackResponseDto;
     }
+
     public TrackResponseDto deleteTrackVanPlaylist(int playlist_id, int track_id) throws SQLException {
         ResultSet resultSet = null;
         PreparedStatement st = null;

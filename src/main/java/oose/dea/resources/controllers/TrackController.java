@@ -4,6 +4,7 @@ import oose.dea.resources.dataresources.TrackDAO;
 import oose.dea.resources.dto.TrackRequestDto;
 import oose.dea.resources.dto.TrackResponseDto;
 import oose.dea.resources.services.AuthorisationService;
+import oose.dea.resources.services.TrackService;
 
 import javax.inject.Inject;
 import javax.ws.rs.*;
@@ -14,6 +15,7 @@ import java.sql.SQLException;
 public class TrackController {
 
     private TrackDAO trackDAO;
+    private TrackService trackService;
     private AuthorisationService authorisationService;
 
     @Inject
@@ -26,12 +28,15 @@ public class TrackController {
         this.trackDAO = trackDAO;
     }
 
+    @Inject
+    public void setTrackService(TrackService trackService) { this.trackService = trackService;}
+
     @GET
     @Path("tracks")
     @Produces("application/json")
     public Response geefTracks(@QueryParam("forPlaylist") int id, @QueryParam("token") String token) throws SQLException {
         if(authorisationService.performAuthentication(token)) {
-            TrackResponseDto trackResponseDto = trackDAO.geefBeschikbareTracks(id);
+            TrackResponseDto trackResponseDto = trackService.performGeefBeschikbareTracks(id);
             return Response.ok().entity(trackResponseDto).build();
         }
         else {
@@ -44,7 +49,7 @@ public class TrackController {
     @Produces("application/json")
     public Response tracksVanPlaylist(@PathParam("id") int id, @QueryParam("token") String token) throws SQLException {
         if(authorisationService.performAuthentication(token)){
-            TrackResponseDto trackResponseDto = trackDAO.getTrackVanPlaylist(id);
+            TrackResponseDto trackResponseDto = trackService.performGetTrackVanPlaylist(id);
             return Response.ok().entity(trackResponseDto).build();
         }
            else {
@@ -57,7 +62,7 @@ public class TrackController {
     @Produces("application/json")
     public Response deleteTrack(@PathParam("playlist_id") int playlist_id, @PathParam("id") int track_id, @QueryParam("token") String token) throws SQLException {
         if(authorisationService.performTrackAuthentication(token, track_id)) {
-            TrackResponseDto trackResponseDto = trackDAO.deleteTrackVanPlaylist(playlist_id, track_id);
+            TrackResponseDto trackResponseDto = trackService.performDeleteTrackVanPlaylist(playlist_id, track_id);
             return Response.ok().entity(trackResponseDto).build();
         }
         else {
@@ -71,7 +76,7 @@ public class TrackController {
     @Consumes("application/json")
     public Response addTrackToPlaylist(@QueryParam("token") String token, @PathParam("id") int playlist_id, TrackRequestDto trackRequestDto) throws SQLException {
         if(authorisationService.performPlaylistAuthorisation(token, playlist_id)) {
-            TrackResponseDto trackResponseDto = trackDAO.addTrackToPlaylist(trackRequestDto, playlist_id);
+            TrackResponseDto trackResponseDto = trackService.performAddTrackToPlaylist(trackRequestDto, playlist_id);
             return Response.ok().entity(trackResponseDto).build();
         }
         else {
