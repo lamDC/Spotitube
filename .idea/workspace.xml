@@ -6,7 +6,117 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1cf00407-6ce5-4385-a2eb-4aef236f3bbd" name="Default Changelist" comment="" />
+    <list default="true" id="1cf00407-6ce5-4385-a2eb-4aef236f3bbd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/oose/dea/resources/exceptions/LoginException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2B/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2B/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2B/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2B/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2B/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2B/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2B/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2B/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2B/A2B.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2B/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2B/src/main/java/nl/han/ica/oose/ad/A2Bconsole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2B/src/main/java/nl/han/ica/oose/ad/File.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2B/src/main/java/nl/han/ica/oose/ad/Knooppunt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2B/src/main/java/nl/han/ica/oose/ad/Locatie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2B/src/main/java/nl/han/ica/oose/ad/Plaats.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2B/src/main/java/nl/han/ica/oose/ad/Route.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2B/src/main/java/nl/han/ica/oose/ad/Routeplanner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2B/src/main/java/nl/han/ica/oose/ad/Verbindingsstuk.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2B/src/main/java/nl/han/ica/oose/ad/Vertraging.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2B/src/main/java/nl/han/ica/oose/ad/Wegennet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2B/src/main/java/nl/han/ica/oose/ad/Wegwerkzaamheid.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2B/src/test/java/nl/han/ica/oose/ad/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2B/target/classes/nl/han/ica/oose/ad/A2Bconsole.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2B/target/classes/nl/han/ica/oose/ad/File.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2B/target/classes/nl/han/ica/oose/ad/Knooppunt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2B/target/classes/nl/han/ica/oose/ad/Locatie.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2B/target/classes/nl/han/ica/oose/ad/Plaats.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2B/target/classes/nl/han/ica/oose/ad/Route.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2B/target/classes/nl/han/ica/oose/ad/Routeplanner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2B/target/classes/nl/han/ica/oose/ad/Verbindingsstuk.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2B/target/classes/nl/han/ica/oose/ad/Vertraging.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2B/target/classes/nl/han/ica/oose/ad/Wegennet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2B/target/classes/nl/han/ica/oose/ad/Wegwerkzaamheid.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A2B/target/test-classes/nl/han/ica/oose/ad/AppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../executetest/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../executetest/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../executetest/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../executetest/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../executetest/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../executetest/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../executetest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../executetest/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../executetest/executetest.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../executetest/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../executetest/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../executetest/src/test/java/oose/dea/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../executetest/target/classes/oose/dea/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../executetest/target/classes/oose/dea/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../executetest/target/classes/oose/dea/FizzBuzz.class" beforeDir="false" afterPath="$PROJECT_DIR$/../executetest/target/classes/oose/dea/FizzBuzz.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../executetest/target/classes/oose/dea/factories/FizzbuzzFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../executetest/target/classes/oose/dea/factories/FizzbuzzFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../executetest/target/test-classes/oose/dea/AppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../priemtest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../priemtest/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spotitube.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spotitube.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/oose/dea/resources/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/oose/dea/resources/controllers/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/oose/dea/resources/dataresources/LoginDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/oose/dea/resources/dataresources/LoginDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/oose/dea/resources/services/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/oose/dea/resources/services/LoginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/oose/dea/resources/controllers/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/oose/dea/resources/controllers/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/oose/dea/resources/controllers/PlaylistController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/oose/dea/resources/controllers/PlaylistController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/oose/dea/resources/controllers/TrackController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/oose/dea/resources/controllers/TrackController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/oose/dea/resources/dataresources/DatabaseConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/oose/dea/resources/dataresources/DatabaseConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/oose/dea/resources/dataresources/LoginDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/oose/dea/resources/dataresources/LoginDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/oose/dea/resources/dataresources/PlaylistDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/oose/dea/resources/dataresources/PlaylistDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/oose/dea/resources/dataresources/TokenDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/oose/dea/resources/dataresources/TokenDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/oose/dea/resources/dataresources/TrackDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/oose/dea/resources/dataresources/TrackDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/oose/dea/resources/dto/LoginRequestDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/oose/dea/resources/dto/LoginRequestDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/oose/dea/resources/dto/LoginResponseDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/oose/dea/resources/dto/LoginResponseDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/oose/dea/resources/dto/PlaylistRequestDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/oose/dea/resources/dto/PlaylistRequestDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/oose/dea/resources/dto/PlaylistResponseDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/oose/dea/resources/dto/PlaylistResponseDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/oose/dea/resources/dto/TrackRequestDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/oose/dea/resources/dto/TrackRequestDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/oose/dea/resources/dto/TrackResponseDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/oose/dea/resources/dto/TrackResponseDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/oose/dea/resources/exceptions/DatabaseConnectionException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/oose/dea/resources/exceptions/DatabaseConnectionException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/oose/dea/resources/models/PlaylistModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/oose/dea/resources/models/PlaylistModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/oose/dea/resources/models/TokenModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/oose/dea/resources/models/TokenModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/oose/dea/resources/models/TrackModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/oose/dea/resources/models/TrackModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/oose/dea/resources/models/UserModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/oose/dea/resources/models/UserModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/oose/dea/resources/services/AuthorisationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/oose/dea/resources/services/AuthorisationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/oose/dea/resources/services/LoginService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/oose/dea/resources/services/LoginService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/oose/dea/resources/services/PlaylistService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/oose/dea/resources/services/PlaylistService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/oose/dea/resources/services/TrackService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/oose/dea/resources/services/TrackService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/oose/dea/resources/util/TokenGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/oose/dea/resources/util/TokenGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spotitube.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/spotitube.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spotitube/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/spotitube/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spotitube/WEB-INF/classes/oose/dea/resources/controllers/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spotitube/WEB-INF/classes/oose/dea/resources/controllers/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spotitube/WEB-INF/classes/oose/dea/resources/controllers/PlaylistController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spotitube/WEB-INF/classes/oose/dea/resources/controllers/PlaylistController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spotitube/WEB-INF/classes/oose/dea/resources/controllers/TrackController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spotitube/WEB-INF/classes/oose/dea/resources/controllers/TrackController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spotitube/WEB-INF/classes/oose/dea/resources/dataresources/DatabaseConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spotitube/WEB-INF/classes/oose/dea/resources/dataresources/DatabaseConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spotitube/WEB-INF/classes/oose/dea/resources/dataresources/LoginDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spotitube/WEB-INF/classes/oose/dea/resources/dataresources/LoginDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spotitube/WEB-INF/classes/oose/dea/resources/dataresources/PlaylistDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spotitube/WEB-INF/classes/oose/dea/resources/dataresources/PlaylistDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spotitube/WEB-INF/classes/oose/dea/resources/dataresources/TokenDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spotitube/WEB-INF/classes/oose/dea/resources/dataresources/TokenDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spotitube/WEB-INF/classes/oose/dea/resources/dataresources/TrackDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spotitube/WEB-INF/classes/oose/dea/resources/dataresources/TrackDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spotitube/WEB-INF/classes/oose/dea/resources/dto/LoginRequestDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spotitube/WEB-INF/classes/oose/dea/resources/dto/LoginRequestDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spotitube/WEB-INF/classes/oose/dea/resources/dto/LoginResponseDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spotitube/WEB-INF/classes/oose/dea/resources/dto/LoginResponseDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spotitube/WEB-INF/classes/oose/dea/resources/dto/PlaylistRequestDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spotitube/WEB-INF/classes/oose/dea/resources/dto/PlaylistRequestDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spotitube/WEB-INF/classes/oose/dea/resources/dto/PlaylistResponseDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spotitube/WEB-INF/classes/oose/dea/resources/dto/PlaylistResponseDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spotitube/WEB-INF/classes/oose/dea/resources/dto/TrackRequestDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spotitube/WEB-INF/classes/oose/dea/resources/dto/TrackRequestDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spotitube/WEB-INF/classes/oose/dea/resources/dto/TrackResponseDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spotitube/WEB-INF/classes/oose/dea/resources/dto/TrackResponseDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spotitube/WEB-INF/classes/oose/dea/resources/exceptions/DatabaseConnectionException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spotitube/WEB-INF/classes/oose/dea/resources/exceptions/DatabaseConnectionException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spotitube/WEB-INF/classes/oose/dea/resources/models/PlaylistModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spotitube/WEB-INF/classes/oose/dea/resources/models/PlaylistModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spotitube/WEB-INF/classes/oose/dea/resources/models/TokenModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spotitube/WEB-INF/classes/oose/dea/resources/models/TokenModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spotitube/WEB-INF/classes/oose/dea/resources/models/TrackModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spotitube/WEB-INF/classes/oose/dea/resources/models/TrackModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spotitube/WEB-INF/classes/oose/dea/resources/models/UserModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spotitube/WEB-INF/classes/oose/dea/resources/models/UserModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spotitube/WEB-INF/classes/oose/dea/resources/services/AuthorisationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spotitube/WEB-INF/classes/oose/dea/resources/services/AuthorisationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spotitube/WEB-INF/classes/oose/dea/resources/services/LoginService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spotitube/WEB-INF/classes/oose/dea/resources/services/LoginService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spotitube/WEB-INF/classes/oose/dea/resources/services/PlaylistService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spotitube/WEB-INF/classes/oose/dea/resources/services/PlaylistService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spotitube/WEB-INF/classes/oose/dea/resources/services/TrackService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spotitube/WEB-INF/classes/oose/dea/resources/services/TrackService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spotitube/WEB-INF/classes/oose/dea/resources/util/TokenGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spotitube/WEB-INF/classes/oose/dea/resources/util/TokenGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/oose/dea/DAOTests/LoginDAOTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/oose/dea/DAOTests/LoginDAOTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/oose/dea/controllerTests/LoginControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/oose/dea/controllerTests/LoginControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/oose/dea/controllerTests/PlaylistControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/oose/dea/controllerTests/PlaylistControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/oose/dea/controllerTests/TrackControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/oose/dea/controllerTests/TrackControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/oose/dea/serviceTests/AuthorisationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/oose/dea/serviceTests/AuthorisationTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toetspatterns/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../toetspatterns/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,13 +162,16 @@
     <session id="1632156897">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="33" />
-          <entry key="project.open.time.16" value="1" />
+          <entry key="project.closed" value="40" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.16" value="3" />
           <entry key="project.open.time.17" value="3" />
           <entry key="project.open.time.18" value="3" />
           <entry key="project.open.time.19" value="9" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.21" value="2" />
+          <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.23" value="2" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.29" value="1" />
@@ -66,16 +179,17 @@
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.37" value="1" />
+          <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.4" value="2" />
-          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="34" />
+          <entry key="project.opened" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="README" value="1" />
-          <entry key="java" value="249" />
+          <entry key="java" value="261" />
           <entry key="properties" value="11" />
           <entry key="xml" value="7" />
           <entry key="yml" value="1" />
@@ -83,7 +197,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="249" />
+          <entry key="JAVA" value="261" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="11" />
           <entry key="XML" value="7" />
@@ -93,14 +207,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="51" />
-          <entry key="java" value="23739" />
+          <entry key="java" value="24194" />
           <entry key="properties" value="83" />
           <entry key="xml" value="129" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="23736" />
+          <entry key="JAVA" value="24191" />
           <entry key="PLAIN_TEXT" value="51" />
           <entry key="Properties" value="83" />
           <entry key="SQL" value="3" />
@@ -115,40 +229,96 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/controllers/TrackController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/controllers/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="583">
-              <caret line="82" column="28" lean-forward="true" selection-start-line="82" selection-start-column="28" selection-end-line="82" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/controllers/PlaylistController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="76" column="87" selection-start-line="76" selection-start-column="87" selection-end-line="76" selection-end-column="87" />
+            <state relative-caret-position="323">
+              <caret line="28" column="74" lean-forward="true" selection-start-line="28" selection-start-column="74" selection-end-line="28" selection-end-column="74" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#547#548#0" expanded="true" />
+                <element signature="e#595#596#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/dataresources/TrackDAO.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/services/LoginService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="184" column="52" lean-forward="true" selection-start-line="184" selection-start-column="52" selection-end-line="184" selection-end-column="52" />
+            <state relative-caret-position="187">
+              <caret line="17" column="83" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="83" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/dataresources/LoginDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="56" column="46" lean-forward="true" selection-start-line="56" selection-start-column="46" selection-end-line="56" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/exceptions/LoginException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#275#276#0" expanded="true" />
+                <element signature="e#319#320#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/exceptions/PlaylistException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#275#276#0" expanded="true" />
+                <element signature="e#319#320#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/oose/dea/controllerTests/LoginControllerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="60" column="37" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/exceptions/DatabaseConnectionException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="57" lean-forward="true" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/dataresources/DatabaseConnection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="37" selection-start-line="37" selection-end-line="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/dataresources/PlaylistDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="46" column="39" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
+            <state relative-caret-position="255">
+              <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -183,13 +353,12 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/LoginControllerTest.java" />
-        <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/README" />
         <option value="$PROJECT_DIR$/src/main/java/Connection.java" />
         <option value="$PROJECT_DIR$/src/main/java/dataresources/Connection.java" />
@@ -224,10 +393,6 @@
         <option value="$PROJECT_DIR$/src/main/java/oose/dea/resources/dataresources/DatabaseConnection.java" />
         <option value="$PROJECT_DIR$/src/test/java/oose/dea/serviceTests/AuthenticationTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/oose/dea/serviceTests/AuthorisationTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/oose/dea/resources/dataresources/LoginDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/oose/dea/resources/services/LoginService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/oose/dea/resources/controllers/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/test/java/oose/dea/controllerTests/LoginControllerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/oose/dea/resources/services/AuthorisationService.java" />
         <option value="$PROJECT_DIR$/src/main/java/oose/dea/resources/services/AuthenticationService.java" />
         <option value="$PROJECT_DIR$/src/main/java/oose/dea/resources/controllers/PlaylistController.java" />
@@ -235,9 +400,15 @@
         <option value="$PROJECT_DIR$/src/test/java/oose/dea/controllerTests/TrackControllerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/oose/dea/resources/dataresources/TokenDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/oose/dea/resources/services/PlaylistService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/oose/dea/resources/dataresources/TrackDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/oose/dea/resources/controllers/TrackController.java" />
         <option value="$PROJECT_DIR$/src/main/java/oose/dea/resources/services/TrackService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/oose/dea/resources/controllers/TrackController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/oose/dea/resources/dataresources/TrackDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/oose/dea/resources/services/LoginService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/oose/dea/resources/controllers/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/test/java/oose/dea/controllerTests/LoginControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/oose/dea/resources/dataresources/LoginDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/oose/dea/resources/exceptions/PlaylistException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/oose/dea/resources/exceptions/LoginException.java" />
         <option value="$PROJECT_DIR$/src/main/java/oose/dea/resources/dataresources/PlaylistDAO.java" />
       </list>
     </option>
@@ -264,8 +435,9 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
-    <option name="width" value="980" />
-    <option name="height" value="1040" />
+    <option name="y" value="-10" />
+    <option name="width" value="979" />
+    <option name="height" value="1049" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -273,6 +445,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -343,17 +516,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="dea" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spotitube" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spotitube" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dea" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spotitube" type="b2602c69:ProjectViewProjectNode" />
@@ -419,17 +582,20 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578152818615" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585253695320" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../B_Progtaal/icss2020/startcode" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -707,7 +873,15 @@
       <workItem from="1571899815448" duration="2013000" />
       <workItem from="1578141224189" duration="2223000" />
       <workItem from="1578144522409" duration="6504000" />
-      <workItem from="1578220060612" duration="4110000" />
+      <workItem from="1578220060612" duration="4211000" />
+      <workItem from="1580936443887" duration="220000" />
+      <workItem from="1581350536161" duration="635000" />
+      <workItem from="1584184188267" duration="1330000" />
+      <workItem from="1584193285411" duration="1624000" />
+      <workItem from="1584276461348" duration="4590000" />
+      <workItem from="1584364334506" duration="740000" />
+      <workItem from="1584562035046" duration="408000" />
+      <workItem from="1585239876192" duration="3545000" />
     </task>
     <servers />
   </component>
@@ -744,7 +918,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="197381000" />
+    <option name="totallyTimeSpent" value="210574000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -759,7 +933,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989429" visible="true" weight="0.21140939" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989429" visible="true" weight="0.23624161" />
       <window_info id="Structure" order="1" sideWeight="0.5010571" side_tool="true" weight="0.26644295" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -769,18 +943,20 @@
       <window_info id="Web" order="7" sideWeight="0.5010571" side_tool="true" weight="0.26644295" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.22836879" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30212766" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" visible="true" weight="0.2567376" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32907802" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49932885" weight="0.32907802" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50067115" side_tool="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50067115" side_tool="true" weight="0.30212766" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.25106382" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Tool Output" order="14" weight="0.32907802" />
+      <window_info anchor="bottom" id="ANTLR Preview" order="15" />
       <window_info active="true" anchor="right" id="Coverage" order="0" side_tool="true" visible="true" weight="0.3295302" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
@@ -807,7 +983,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/oose/dea/resources/dataresources/PlaylistDAO.java</url>
-          <line>99</line>
+          <line>95</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
@@ -903,16 +1079,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/exceptions/DatabaseConnectionException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="63" lean-forward="true" selection-start-line="3" selection-start-column="63" selection-end-line="3" selection-end-column="63" />
         </state>
       </provider>
     </entry>
@@ -927,20 +1093,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/database.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/dataresources/DatabaseConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="43" column="31" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/oose/dea/controllerTests/LoginControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="31" column="44" lean-forward="true" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/classes/database.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -949,20 +1101,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/services/AuthenticationService.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/controllers/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/oose/dea/controllerTests/PlaylistControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="667">
           <caret line="143" column="41" selection-start-line="143" selection-start-column="41" selection-end-line="143" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -973,48 +1115,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/services/AuthorisationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/services/LoginService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" column="30" selection-start-line="11" selection-start-column="4" selection-end-line="14" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/dataresources/LoginDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/dataresources/TokenDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="36" column="38" lean-forward="true" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
-          <folding>
-            <element signature="e#559#560#0" expanded="true" />
-            <element signature="e#622#623#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/services/PlaylistService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" column="36" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="14" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -1053,53 +1157,214 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/services/TrackService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/controllers/PlaylistController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="75" lean-forward="true" selection-start-line="12" selection-start-column="75" selection-end-line="12" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="623">
+          <caret line="76" column="87" selection-start-line="76" selection-start-column="87" selection-end-line="76" selection-end-column="87" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/controllers/TrackController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="583">
-          <caret line="82" column="28" lean-forward="true" selection-start-line="82" selection-start-column="28" selection-end-line="82" selection-end-column="28" />
+        <state relative-caret-position="425">
+          <caret line="61" column="33" lean-forward="true" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/controllers/PlaylistController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/services/TrackService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="76" column="87" selection-start-line="76" selection-start-column="87" selection-end-line="76" selection-end-column="87" />
+        <state relative-caret-position="119">
+          <caret line="12" column="75" lean-forward="true" selection-start-line="12" selection-start-column="75" selection-end-line="12" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/services/PlaylistService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="14" column="36" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="14" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/dataresources/TrackDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2074">
+          <caret line="133" column="16" selection-start-line="133" selection-start-column="16" selection-end-line="133" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/dataresources/DatabaseConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/services/AuthorisationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/dataresources/PlaylistDAO.java">
+    <entry file="jar://C:/Program Files/Java/jdk-13.0.2/lib/src.zip!/java.base/java/lang/RuntimeException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="46" column="39" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
+        <state relative-caret-position="17">
+          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/dataresources/TrackDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/exceptions/DatabaseConnectionException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="184" column="52" lean-forward="true" selection-start-line="184" selection-start-column="52" selection-end-line="184" selection-end-column="52" />
+        <state relative-caret-position="34">
+          <caret line="2" column="57" lean-forward="true" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/oose/dea/controllerTests/LoginControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="60" column="37" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/services/LoginService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="17" column="83" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/controllers/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="28" column="74" lean-forward="true" selection-start-line="28" selection-start-column="74" selection-end-line="28" selection-end-column="74" />
+          <folding>
+            <element signature="e#547#548#0" expanded="true" />
+            <element signature="e#595#596#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/exceptions/PlaylistException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#275#276#0" expanded="true" />
+            <element signature="e#319#320#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/exceptions/LoginException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#275#276#0" expanded="true" />
+            <element signature="e#319#320#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/dataresources/LoginDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="56" column="46" lean-forward="true" selection-start-line="56" selection-start-column="46" selection-end-line="56" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/dataresources/PlaylistDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>spotitube:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>13</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>spotitube</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.airhacks:jaxrs-cors:0.0.2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

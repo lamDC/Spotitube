@@ -2,6 +2,7 @@ package oose.dea.resources.controllers;
 
 import oose.dea.resources.dto.LoginRequestDto;
 import oose.dea.resources.dataresources.LoginDAO;
+import oose.dea.resources.exceptions.LoginException;
 import oose.dea.resources.models.UserModel;
 import oose.dea.resources.services.LoginService;
 
@@ -24,13 +25,12 @@ public class LoginController {
     @Path("/")
     @Consumes("application/json")
     public Response login(LoginRequestDto request) throws SQLException {
-
-        UserModel userModel = loginService.performFirstLogin(request);
-        if("error".equals(userModel.getToken())){
-            return Response.status(403).build();
-        }
-        else {
+        try{
+            UserModel userModel = loginService.performFirstLogin(request);
             return Response.ok().entity(userModel).build();
+        }
+        catch(LoginException e){
+            return e.toResponse(e);
         }
     }
 

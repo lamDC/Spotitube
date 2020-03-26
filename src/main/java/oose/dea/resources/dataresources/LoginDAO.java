@@ -1,6 +1,7 @@
 package oose.dea.resources.dataresources;
 
 import oose.dea.resources.dto.LoginRequestDto;
+import oose.dea.resources.exceptions.LoginException;
 import oose.dea.resources.models.UserModel;
 
 import javax.inject.Inject;
@@ -25,7 +26,7 @@ public class LoginDAO {
         connection = databaseConnection.getConnection();
     }
 
-    public UserModel login(LoginRequestDto request) throws SQLException {
+    public UserModel login(LoginRequestDto request) throws SQLException, LoginException {
         UserModel userModel = new UserModel();
         tokenDAO.generateTokenForUser(request);
 
@@ -52,9 +53,8 @@ public class LoginDAO {
                 userModel.setUser(user);
             }
         }
-        if(userModel.getToken() == null){
-            userModel.setToken("error");
-        }
+            if(userModel.getToken() == null)
+                throw new LoginException(401);
 
         return userModel;
     }

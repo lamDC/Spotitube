@@ -3,6 +3,7 @@ package oose.dea.controllerTests;
 import oose.dea.resources.dataresources.LoginDAO;
 import oose.dea.resources.controllers.LoginController;
 import oose.dea.resources.dto.LoginRequestDto;
+import oose.dea.resources.exceptions.LoginException;
 import oose.dea.resources.models.UserModel;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -25,7 +26,7 @@ public class LoginControllerTest {
     }
 
     @Test
-    void doesEndpointDelegateCorrectWorkToDAO() throws SQLException, ClassNotFoundException {
+    void doesEndpointDelegateCorrectWorkToDAO() throws SQLException, ClassNotFoundException, LoginException {
         //Setup
         UserModel usermodel =  new UserModel();
         LoginRequestDto loginRequestDto = new LoginRequestDto();
@@ -47,7 +48,7 @@ public class LoginControllerTest {
     }
 
     @Test
-    void doesLoginReturnErrorWithWrongCredentials() throws SQLException, ClassNotFoundException {
+    void doesLoginReturnErrorWithWrongCredentials() throws SQLException, ClassNotFoundException, LoginException {
         // Setup
         UserModel usermodel = new UserModel();
         LoginRequestDto loginRequestDto = new LoginRequestDto();

@@ -24,14 +24,10 @@ public class PlaylistDAO {
 
         String sql = "SELECT DISTINCT P.PLAYLIST_ID, P.NAME, P.OWNER FROM PLAYLIST P " +
                 "LEFT OUTER JOIN TRACK_IN_PLAYLIST TIP ON P.PLAYLIST_ID = TIP.PLAYLIST_ID";
-
-        PlaylistResponseDto responseDto = leesPlaylists(sql);
-        ArrayList<PlaylistModel> playlistArray = responseDto.getPlaylists();
         return leesPlaylists(sql);
     }
 
     public PlaylistResponseDto editPlaylist(PlaylistRequestDto playlistRequestDto, int id) throws SQLException {
-        ResultSet resultSet = null;
         PreparedStatement st = null;
         java.sql.Connection cnEmps = connection;
 
