@@ -2,6 +2,7 @@ package oose.dea.resources.dataresources;
 
 import oose.dea.resources.dto.PlaylistRequestDto;
 import oose.dea.resources.dto.PlaylistResponseDto;
+import oose.dea.resources.exceptions.PlaylistException;
 import oose.dea.resources.models.PlaylistModel;
 
 import javax.inject.Inject;
@@ -20,14 +21,18 @@ public class PlaylistDAO {
         connection = databaseConnection.getConnection();
     }
 
-    public PlaylistResponseDto getPlaylists() throws SQLException {
+    public PlaylistResponseDto getPlaylists() throws PlaylistException {
 
         String sql = "SELECT DISTINCT P.PLAYLIST_ID, P.NAME, P.OWNER FROM PLAYLIST P " +
                 "LEFT OUTER JOIN TRACK_IN_PLAYLIST TIP ON P.PLAYLIST_ID = TIP.PLAYLIST_ID";
-        return leesPlaylists(sql);
+        try{
+            return leesPlaylists(sql);
+        } catch(SQLException e){
+            throw new PlaylistException(400);
+        }
     }
 
-    public PlaylistResponseDto editPlaylist(PlaylistRequestDto playlistRequestDto, int id) throws SQLException {
+    public PlaylistResponseDto editPlaylist(PlaylistRequestDto playlistRequestDto, int id) throws SQLException, PlaylistException {
         PreparedStatement st = null;
         java.sql.Connection cnEmps = connection;
 
@@ -43,10 +48,14 @@ public class PlaylistDAO {
         String sql = "SELECT DISTINCT P.PLAYLIST_ID, P.NAME, P.OWNER FROM PLAYLIST P " +
                 "LEFT OUTER JOIN TRACK_IN_PLAYLIST TIP ON P.PLAYLIST_ID = TIP.PLAYLIST_ID";
 
-        return leesPlaylists(sql);
+        try{
+            return leesPlaylists(sql);
+        } catch(SQLException e){
+            throw new PlaylistException(400);
+        }
     }
 
-    public PlaylistResponseDto deletePlaylistFromDatabase(int id) throws SQLException {
+    public PlaylistResponseDto deletePlaylistFromDatabase(int id) throws SQLException, PlaylistException {
         ResultSet resultSet = null;
         PreparedStatement st = null;
         java.sql.Connection cnEmps = connection;
@@ -70,10 +79,13 @@ public class PlaylistDAO {
         String sql = "SELECT DISTINCT P.PLAYLIST_ID, P.NAME, P.OWNER FROM PLAYLIST P " +
         "LEFT OUTER JOIN TRACK_IN_PLAYLIST TIP ON P.PLAYLIST_ID = TIP.PLAYLIST_ID";
 
-
-        return leesPlaylists(sql);
+        try{
+            return leesPlaylists(sql);
+        } catch(SQLException e){
+            throw new PlaylistException(400);
+        }
     }
-    public PlaylistResponseDto addPlaylistToDatabase(PlaylistRequestDto playlistRequestDto, String token) throws SQLException{
+    public PlaylistResponseDto addPlaylistToDatabase(PlaylistRequestDto playlistRequestDto, String token) throws SQLException, PlaylistException {
         String user = geefUserVanToken(token);
         String playlistName = playlistRequestDto.getName();
 
@@ -95,8 +107,11 @@ public class PlaylistDAO {
 
         String sql = "SELECT DISTINCT P.PLAYLIST_ID, P.NAME, P.OWNER FROM PLAYLIST P" +
                 " LEFT OUTER JOIN TRACK_IN_PLAYLIST TIP ON P.PLAYLIST_ID = TIP.PLAYLIST_ID";
-        return leesPlaylists(sql);
-    }
+        try{
+            return leesPlaylists(sql);
+        } catch(SQLException e){
+            throw new PlaylistException(400);
+        }    }
 
     public PlaylistResponseDto leesPlaylists(String sql) throws SQLException {
         ResultSet resultSet = null;

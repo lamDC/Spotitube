@@ -1,6 +1,8 @@
 package oose.dea.resources.dataresources;
 
 import oose.dea.resources.dto.LoginRequestDto;
+import oose.dea.resources.exceptions.AuthorisationException;
+import oose.dea.resources.exceptions.PlaylistException;
 import oose.dea.resources.models.PlaylistModel;
 import oose.dea.resources.models.TokenModel;
 import oose.dea.resources.models.UserModel;
@@ -20,7 +22,7 @@ public class TokenDAO {
         connection = databaseConnection.getConnection();
     }
 
-    public boolean performAuthentication(String token) throws SQLException {
+    public void performAuthentication(String token) throws SQLException, AuthorisationException {
         boolean isTokenVanEenUser = false;
         ResultSet resultSet = null;
         PreparedStatement st = null;
@@ -32,7 +34,7 @@ public class TokenDAO {
             st = cnEmps.prepareStatement(sql);
             st.setString(1, token);
         } catch (SQLException e) {
-            e.printStackTrace();
+            throw new SQLException(e);
         }
         resultSet = st.executeQuery();
         while (resultSet.next())
@@ -42,7 +44,8 @@ public class TokenDAO {
                 isTokenVanEenUser = true;
             }
         }
-        return isTokenVanEenUser;
+        if(!isTokenVanEenUser)
+            throw new AuthorisationException(403);
     }
 
     public void generateTokenForUser(LoginRequestDto request) throws SQLException {
@@ -90,7 +93,7 @@ public class TokenDAO {
         return user.getUser();
     }
 
-    public boolean playlistAuthorisation(String token, int playlist_id) throws SQLException {
+    public boolean playlistAuthorisation(String token, int playlist_id) throws SQLException, AuthorisationException {
         String user = getUserByToken(token);
         boolean isTokenVanUser = false;
 
@@ -115,6 +118,8 @@ public class TokenDAO {
                 }
             }
         }
+        if(!isTokenVanUser)
+            throw new AuthorisationException(403);
         return isTokenVanUser;
     }
 
