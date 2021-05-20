@@ -1,6 +1,7 @@
 package oose.dea.resources.dataresources;
 
 import oose.dea.resources.dto.LoginRequestDto;
+import oose.dea.resources.exceptions.AuthorisationException;
 import oose.dea.resources.exceptions.LoginException;
 import oose.dea.resources.models.UserModel;
 
@@ -26,37 +27,47 @@ public class LoginDAO {
         connection = databaseConnection.getConnection();
     }
 
-    public UserModel login(LoginRequestDto request) throws SQLException, LoginException {
+    public UserModel login(LoginRequestDto request) throws LoginException {
         UserModel userModel = new UserModel();
-        tokenDAO.generateTokenForUser(request);
+        try {
+            tokenDAO.generateTokenForUser(request);
+        } catch(AuthorisationException e){
+            throw new LoginException(e.statuscode);
+        }
 
         ResultSet resultSet = null;
         PreparedStatement st = null;
         java.sql.Connection cnEmps = connection;
-        String sql = "SELECT * FROM [USER]";
+        String sql = "SELECT * FROM [USER] WHERE USERNAME = ? AND PASSWORD = ?";
 
         try {
             st = cnEmps.prepareStatement(sql);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        resultSet = st.executeQuery();
-        while (resultSet.next())
-        {
-            String     username   = resultSet.getString("USERNAME");
-            String     password   = resultSet.getString("PASSWORD");
-            if(username.equals(request.getUser()) && password.equals(request.getPassword())){
-                String     token   = resultSet.getString("TOKEN");
-                String     user   = resultSet.getString("NAME");
-                userModel.setToken(token);
+            st.setString(1, request.getUser());
+            st.setString(2, request.getPassword());
+            resultSet = st.executeQuery();
+            while (resultSet.next())
+            {
+                String     username   = resultSet.getString("USERNAME");
+                String     password   = resultSet.getString("PASSWORD");
+                if(username.equals(request.getUser()) && password.equals(request.getPassword())){
+                    String     token   = resultSet.getString("TOKEN");
+                    String     user   = resultSet.getString("NAME");
+                    userModel.setToken(token);
 
-                userModel.setUser(user);
+                    userModel.setUser(user);
+                }
+                else {
+                    userModel.setToken(null);
+                    userModel.setUser(null);
+                }
             }
-        }
             if(userModel.getToken() == null)
                 throw new LoginException(401);
 
-        return userModel;
+            return userModel;
+        } catch (SQLException e) {
+            throw new LoginException(e.getErrorCode());
+        }
     }
 
 }

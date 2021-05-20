@@ -17,22 +17,14 @@ public class AuthorisationService {
     }
 
     public void performPlaylistAuthorisation(String token, int playlist_id) throws AuthorisationException {
-        try{
-            tokenDAO.playlistAuthorisation(token, playlist_id);
-        } catch (SQLException e){
-            e.printStackTrace();
-        }
+        tokenDAO.playlistAuthorisation(token, playlist_id);
     }
 
-    public boolean performTrackAuthentication(String token, int track_id) throws SQLException {
+    public boolean performTrackAuthentication(String token, int track_id) throws AuthorisationException {
         return tokenDAO.trackAuthentication(token, track_id);
     }
 
     public void performAuthentication(String token) throws AuthorisationException {
-        try{
-            tokenDAO.performAuthentication(token);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        tokenDAO.performAuthentication(token);
     }
 }

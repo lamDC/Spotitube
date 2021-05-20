@@ -140,16 +140,16 @@
       <FILTER>oose.dea.controllerTests.PlaylistControllerTest</FILTER>
       <FILTER>oose.dea.controllerTests.TrackControllerTest</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/spotitube$LoginControllerTest_doesEndpointDelegateCorrectWorkToDAO.ic" NAME="LoginControllerTest.doesEndpointDelegateCorrectWorkToDAO Coverage Results" MODIFIED="1553944126865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/spotitube$LoginControllerTest_doesEndpointDelegateCorrectWorkToDAO.ic" NAME="LoginControllerTest.doesEndpointDelegateCorrectWorkToDAO Coverage Results" MODIFIED="1621516335330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>oose.dea.controllerTests.*</FILTER>
-      <FILTER>dea.controllers.LoginController</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/spotitube$TrackControllerTest_doesTrackDAOReturnCorrectAvailableTracks.ic" NAME="TrackControllerTest.doesTrackDAOReturnCorrectAvailableTracks Coverage Results" MODIFIED="1554048167421" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>oose.dea.controllerTests.*</FILTER>
       <FILTER>dea.controllers.TrackController</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/spotitube$LoginControllerTest.ic" NAME="LoginControllerTest Coverage Results" MODIFIED="1554119573235" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/spotitube$LoginControllerTest.ic" NAME="LoginControllerTest Coverage Results" MODIFIED="1621516460260" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>oose.dea.controllerTests.*</FILTER>
+      <FILTER>oose.dea.resources.controllers.LoginController</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/spotitube$PlaylistControllerTest.ic" NAME="PlaylistControllerTest Coverage Results" MODIFIED="1559300240706" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>oose.dea.controllerTests.*</FILTER>
@@ -162,8 +162,9 @@
     <session id="1632156897">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="42" />
+          <entry key="project.closed" value="44" />
           <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.16" value="3" />
           <entry key="project.open.time.17" value="3" />
           <entry key="project.open.time.18" value="3" />
@@ -175,7 +176,7 @@
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.29" value="1" />
-          <entry key="project.open.time.3" value="5" />
+          <entry key="project.open.time.3" value="6" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.37" value="1" />
@@ -183,23 +184,25 @@
           <entry key="project.open.time.4" value="3" />
           <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="44" />
+          <entry key="project.opened" value="46" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="README" value="1" />
-          <entry key="java" value="275" />
-          <entry key="properties" value="12" />
+          <entry key="class" value="11" />
+          <entry key="java" value="301" />
+          <entry key="properties" value="13" />
           <entry key="xml" value="7" />
           <entry key="yml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="275" />
+          <entry key="CLASS" value="11" />
+          <entry key="JAVA" value="301" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Properties" value="12" />
+          <entry key="Properties" value="13" />
           <entry key="XML" value="7" />
           <entry key="YAML" value="1" />
         </counts>
@@ -207,14 +210,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="51" />
-          <entry key="java" value="25396" />
+          <entry key="java" value="27092" />
           <entry key="properties" value="83" />
           <entry key="xml" value="129" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="25393" />
+          <entry key="JAVA" value="27089" />
           <entry key="PLAIN_TEXT" value="51" />
           <entry key="Properties" value="83" />
           <entry key="SQL" value="3" />
@@ -228,11 +231,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/oose/dea/controllerTests/LoginControllerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="27" column="18" lean-forward="true" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/controllers/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="28" column="57" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
+            <state relative-caret-position="267">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
               <folding>
                 <element signature="e#547#548#0" expanded="true" />
                 <element signature="e#595#596#0" expanded="true" />
@@ -242,81 +257,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/controllers/PlaylistController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="88" column="79" selection-start-line="88" selection-start-column="79" selection-end-line="88" selection-end-column="79" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/controllers/TrackController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="59" column="9" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/services/PlaylistService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="41" column="41" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/dataresources/LoginDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="28" column="87" selection-start-line="28" selection-start-column="73" selection-end-line="28" selection-end-column="87" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/exceptions/LoginException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="1" lean-forward="true" selection-end-line="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#275#276#0" expanded="true" />
-                <element signature="e#319#320#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/dataresources/PlaylistDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="95" column="63" lean-forward="true" selection-start-line="95" selection-start-column="63" selection-end-line="95" selection-end-column="63" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/dataresources/TokenDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="95" column="19" selection-start-line="95" selection-start-column="19" selection-end-line="95" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/services/AuthorisationService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="142">
+              <caret line="49" column="30" lean-forward="true" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -324,8 +268,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/services/LoginService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="17" column="101" lean-forward="true" selection-start-line="17" selection-start-column="101" selection-end-line="17" selection-end-column="101" />
+            <state relative-caret-position="153">
+              <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/dataresources/TokenDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="51" column="16" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/dataresources/PlaylistDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2312">
+              <caret line="148" column="27" selection-start-line="148" selection-start-column="27" selection-end-line="148" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -354,7 +316,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/Connection.java" />
         <option value="$PROJECT_DIR$/src/main/java/dataresources/Connection.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/dea/controllers/dto/PlaylistResponseDto.java" />
@@ -386,25 +347,26 @@
         <option value="$PROJECT_DIR$/src/main/java/oose/dea/properties/database.properties" />
         <option value="$PROJECT_DIR$/src/main/java/oose/dea/resources/dataresources/DatabaseConnection.java" />
         <option value="$PROJECT_DIR$/src/test/java/oose/dea/serviceTests/AuthenticationTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/oose/dea/serviceTests/AuthorisationTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/oose/dea/resources/services/AuthenticationService.java" />
-        <option value="$PROJECT_DIR$/src/test/java/oose/dea/controllerTests/PlaylistControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/oose/dea/controllerTests/TrackControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/oose/dea/resources/services/TrackService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/oose/dea/resources/dataresources/TrackDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/oose/dea/resources/services/LoginService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/oose/dea/resources/controllers/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/test/java/oose/dea/controllerTests/LoginControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/oose/dea/resources/dataresources/LoginDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/oose/dea/resources/exceptions/LoginException.java" />
         <option value="$PROJECT_DIR$/src/main/java/oose/dea/resources/exceptions/PlaylistException.java" />
         <option value="$PROJECT_DIR$/src/main/java/oose/dea/resources/exceptions/AuthorisationException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/oose/dea/resources/dataresources/TokenDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/oose/dea/resources/services/AuthorisationService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/oose/dea/resources/controllers/PlaylistController.java" />
+        <option value="$PROJECT_DIR$/src/test/java/oose/dea/controllerTests/PlaylistControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/oose/dea/controllerTests/TrackControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/oose/dea/serviceTests/AuthorisationTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/oose/dea/resources/exceptions/TrackException.java" />
         <option value="$PROJECT_DIR$/src/main/java/oose/dea/resources/dataresources/PlaylistDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/oose/dea/resources/services/PlaylistService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/oose/dea/resources/controllers/PlaylistController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/oose/dea/resources/dataresources/TrackDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/oose/dea/resources/services/TrackService.java" />
         <option value="$PROJECT_DIR$/src/main/java/oose/dea/resources/controllers/TrackController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/oose/dea/resources/dataresources/TokenDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/oose/dea/resources/services/AuthorisationService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/oose/dea/resources/services/LoginService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/oose/dea/resources/dataresources/LoginDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/oose/dea/resources/controllers/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/test/java/oose/dea/controllerTests/LoginControllerTest.java" />
       </list>
     </option>
   </component>
@@ -430,9 +392,8 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
-    <option name="y" value="-10" />
     <option name="width" value="980" />
-    <option name="height" value="1050" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -440,7 +401,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -567,6 +528,15 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="dea" type="462c0819:PsiDirectoryNode" />
+              <item name="DAOTests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spotitube" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spotitube" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dea" type="462c0819:PsiDirectoryNode" />
               <item name="serviceTests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -584,14 +554,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1616513335467" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1621519696607" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../B_Progtaal/icss2020/startcode" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="SDKs" />
@@ -643,7 +613,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlaylistControllerTest.doesPlaylistDAOReturnDeletePlaylistResponse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spotitube" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="oose.dea.controllerTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="oose.dea.resources.controllers.LoginController" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="oose.dea.controllerTests" />
+      <option name="MAIN_CLASS_NAME" value="oose.dea.controllerTests.LoginControllerTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginControllerTest.doesEndpointDelegateCorrectWorkToDAO" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spotitube" />
       <extension name="coverage">
         <pattern>
@@ -652,14 +642,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="oose.dea.controllerTests" />
-      <option name="MAIN_CLASS_NAME" value="oose.dea.controllerTests.PlaylistControllerTest" />
-      <option name="METHOD_NAME" value="doesPlaylistDAOReturnDeletePlaylistResponse" />
+      <option name="MAIN_CLASS_NAME" value="oose.dea.controllerTests.LoginControllerTest" />
+      <option name="METHOD_NAME" value="doesEndpointDelegateCorrectWorkToDAO" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlaylistControllerTest.doesPlaylistDAOReturnEditPlaylistResponse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginControllerTest.doesLoginReturnErrorWithWrongCredentials" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spotitube" />
       <extension name="coverage">
         <pattern>
@@ -668,24 +658,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="oose.dea.controllerTests" />
-      <option name="MAIN_CLASS_NAME" value="oose.dea.controllerTests.PlaylistControllerTest" />
-      <option name="METHOD_NAME" value="doesPlaylistDAOReturnEditPlaylistResponse" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PlaylistControllerTest.doesPlaylistDAOReturnPlaylistResponse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spotitube" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="oose.dea.controllerTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="oose.dea.controllerTests" />
-      <option name="MAIN_CLASS_NAME" value="oose.dea.controllerTests.PlaylistControllerTest" />
-      <option name="METHOD_NAME" value="doesPlaylistDAOReturnPlaylistResponse" />
+      <option name="MAIN_CLASS_NAME" value="oose.dea.controllerTests.LoginControllerTest" />
+      <option name="METHOD_NAME" value="doesLoginReturnErrorWithWrongCredentials" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -816,19 +790,19 @@
     <list>
       <item itemvalue="JUnit.Unnamed" />
       <item itemvalue="TomEE Server.tomee" />
-      <item itemvalue="JUnit.PlaylistControllerTest.doesPlaylistDAOReturnPlaylistResponse" />
-      <item itemvalue="JUnit.PlaylistControllerTest.doesPlaylistDAOReturnDeletePlaylistResponse" />
-      <item itemvalue="JUnit.PlaylistControllerTest.doesPlaylistDAOReturnEditPlaylistResponse" />
-      <item itemvalue="JUnit.oose.dea in spotitube" />
       <item itemvalue="Cucumber java.All Features in: main" />
+      <item itemvalue="JUnit.oose.dea in spotitube" />
+      <item itemvalue="JUnit.LoginControllerTest" />
+      <item itemvalue="JUnit.LoginControllerTest.doesEndpointDelegateCorrectWorkToDAO" />
+      <item itemvalue="JUnit.LoginControllerTest.doesLoginReturnErrorWithWrongCredentials" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LoginControllerTest.doesEndpointDelegateCorrectWorkToDAO" />
+        <item itemvalue="JUnit.LoginControllerTest.doesLoginReturnErrorWithWrongCredentials" />
+        <item itemvalue="JUnit.LoginControllerTest" />
         <item itemvalue="Cucumber java.All Features in: main" />
         <item itemvalue="JUnit.oose.dea in spotitube" />
-        <item itemvalue="JUnit.PlaylistControllerTest.doesPlaylistDAOReturnEditPlaylistResponse" />
-        <item itemvalue="JUnit.PlaylistControllerTest.doesPlaylistDAOReturnDeletePlaylistResponse" />
-        <item itemvalue="JUnit.PlaylistControllerTest.doesPlaylistDAOReturnPlaylistResponse" />
       </list>
     </recent_temporary>
   </component>
@@ -885,44 +859,46 @@
       <workItem from="1584562035046" duration="408000" />
       <workItem from="1585239876192" duration="3803000" />
       <workItem from="1615203782829" duration="71000" />
-      <workItem from="1616495904197" duration="13544000" />
+      <workItem from="1616495904197" duration="13868000" />
+      <workItem from="1620813277014" duration="14840000" />
+      <workItem from="1621518870572" duration="812000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TrackControllerTest - 2019.05.31 at 13h 57m 50s.xml">
-      <configuration name="TrackControllerTest" configurationId="JUnit" />
+    <history-entry file="LoginControllerTest_doesLoginReturnErrorWithWrongCredentials - 2021.05.20 at 15h 58m 22s.xml">
+      <configuration name="LoginControllerTest.doesLoginReturnErrorWithWrongCredentials" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PlaylistControllerTest - 2019.05.31 at 13h 57m 56s.xml">
-      <configuration name="PlaylistControllerTest" configurationId="JUnit" />
+    <history-entry file="LoginControllerTest_doesLoginReturnErrorWithWrongCredentials - 2021.05.20 at 15h 59m 25s.xml">
+      <configuration name="LoginControllerTest.doesLoginReturnErrorWithWrongCredentials" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PlaylistControllerTest_doesPlaylistDAOReturnAddPlaylistResponse - 2019.05.31 at 13h 58m 09s.xml">
-      <configuration name="PlaylistControllerTest.doesPlaylistDAOReturnAddPlaylistResponse" configurationId="JUnit" />
+    <history-entry file="LoginControllerTest_doesLoginReturnErrorWithWrongCredentials - 2021.05.20 at 16h 00m 02s.xml">
+      <configuration name="LoginControllerTest.doesLoginReturnErrorWithWrongCredentials" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PlaylistControllerTest_doesPlaylistDAOReturnAddPlaylistResponse - 2019.05.31 at 13h 58m 34s.xml">
-      <configuration name="PlaylistControllerTest.doesPlaylistDAOReturnAddPlaylistResponse" configurationId="JUnit" />
+    <history-entry file="LoginControllerTest_doesLoginReturnErrorWithWrongCredentials - 2021.05.20 at 16h 00m 15s.xml">
+      <configuration name="LoginControllerTest.doesLoginReturnErrorWithWrongCredentials" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PlaylistControllerTest_doesPlaylistDAOReturnPlaylistResponse - 2019.05.31 at 13h 58m 59s.xml">
-      <configuration name="PlaylistControllerTest.doesPlaylistDAOReturnPlaylistResponse" configurationId="JUnit" />
+    <history-entry file="LoginControllerTest_doesLoginReturnErrorWithWrongCredentials - 2021.05.20 at 16h 02m 14s.xml">
+      <configuration name="LoginControllerTest.doesLoginReturnErrorWithWrongCredentials" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PlaylistControllerTest_doesPlaylistDAOReturnDeletePlaylistResponse - 2019.05.31 at 14h 00m 46s.xml">
-      <configuration name="PlaylistControllerTest.doesPlaylistDAOReturnDeletePlaylistResponse" configurationId="JUnit" />
+    <history-entry file="LoginControllerTest_doesLoginReturnErrorWithWrongCredentials - 2021.05.20 at 16h 02m 24s.xml">
+      <configuration name="LoginControllerTest.doesLoginReturnErrorWithWrongCredentials" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PlaylistControllerTest_doesPlaylistDAOReturnEditPlaylistResponse - 2019.05.31 at 14h 00m 51s.xml">
-      <configuration name="PlaylistControllerTest.doesPlaylistDAOReturnEditPlaylistResponse" configurationId="JUnit" />
+    <history-entry file="LoginControllerTest_doesLoginReturnErrorWithWrongCredentials - 2021.05.20 at 16h 02m 55s.xml">
+      <configuration name="LoginControllerTest.doesLoginReturnErrorWithWrongCredentials" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PlaylistControllerTest_doesPlaylistDAOReturnEditPlaylistResponse - 2019.05.31 at 14h 01m 11s.xml">
-      <configuration name="PlaylistControllerTest.doesPlaylistDAOReturnEditPlaylistResponse" configurationId="JUnit" />
+    <history-entry file="LoginControllerTest_doesLoginReturnErrorWithWrongCredentials - 2021.05.20 at 16h 03m 07s.xml">
+      <configuration name="LoginControllerTest.doesLoginReturnErrorWithWrongCredentials" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="oose_dea_in_spotitube - 2019.05.31 at 14h 02m 11s.xml">
-      <configuration name="oose.dea in spotitube" configurationId="JUnit" />
+    <history-entry file="LoginControllerTest_doesEndpointDelegateCorrectWorkToDAO - 2021.05.20 at 16h 03m 35s.xml">
+      <configuration name="LoginControllerTest.doesEndpointDelegateCorrectWorkToDAO" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="oose_dea_in_spotitube - 2019.05.31 at 14h 28m 33s.xml">
-      <configuration name="oose.dea in spotitube" configurationId="JUnit" />
+    <history-entry file="LoginControllerTest_doesEndpointDelegateCorrectWorkToDAO - 2021.05.20 at 16h 03m 52s.xml">
+      <configuration name="LoginControllerTest.doesEndpointDelegateCorrectWorkToDAO" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="224447000" />
+    <option name="totallyTimeSpent" value="240423000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -937,7 +913,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989429" visible="true" weight="0.24295302" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989429" visible="true" weight="0.17181209" />
       <window_info id="Structure" order="1" sideWeight="0.5010571" side_tool="true" weight="0.26644295" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -947,7 +923,7 @@
       <window_info id="Web" order="7" sideWeight="0.5010571" side_tool="true" weight="0.26644295" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.22836879" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" weight="0.31205675" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932885" visible="true" weight="0.31205675" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -955,13 +931,13 @@
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32907802" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49932885" weight="0.32907802" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50067115" side_tool="true" weight="0.30212766" />
-      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.25106382" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.25106382" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Tool Output" order="14" weight="0.32907802" />
       <window_info anchor="bottom" id="ANTLR Preview" order="15" />
-      <window_info active="true" anchor="right" id="Coverage" order="0" side_tool="true" visible="true" weight="0.3295302" />
+      <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.3295302" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
@@ -982,19 +958,37 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/oose/dea/resources/dataresources/LoginDAO.java</url>
+          <line>45</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/oose/dea/resources/dataresources/LoginDAO.java</url>
+          <line>49</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/oose/dea/controllerTests/LoginControllerTest.java</url>
+          <line>75</line>
+          <properties />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/oose/dea/resources/services/LoginService.java</url>
+          <line>18</line>
+          <properties />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/beans.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/oose/dea/AppTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/LoginControllerTest.java" />
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1067,43 +1061,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/oose/dea/serviceTests/AuthorisationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/oose/dea/DAOTests/LoginDAOTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/oose/dea/serviceTests/AuthenticationTest.java" />
-    <entry file="file://$PROJECT_DIR$/target/classes/database.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/services/AuthenticationService.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/oose/dea/controllerTests/PlaylistControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="143" column="41" selection-start-line="143" selection-start-column="41" selection-end-line="143" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/oose/dea/controllerTests/TrackControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1126">
-          <caret line="81" column="41" selection-start-line="81" selection-start-column="41" selection-end-line="81" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/dto/PlaylistResponseDto.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1139,20 +1098,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/services/TrackService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" column="75" lean-forward="true" selection-start-line="12" selection-start-column="75" selection-end-line="12" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/dataresources/TrackDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2074">
-          <caret line="133" column="16" selection-start-line="133" selection-start-column="16" selection-end-line="133" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-13.0.2/lib/src.zip!/java.base/java/lang/RuntimeException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1174,27 +1119,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/oose/dea/controllerTests/LoginControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="623">
-          <caret line="60" column="37" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/exceptions/DatabaseConnectionException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="57" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/exceptions/PlaylistException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1210,10 +1138,195 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/controllers/LoginController.java">
+    <entry file="jar://C:/Program Files/Java/jdk-13.0.2/lib/src.zip!/java.sql/java/sql/SQLException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="165" column="11" selection-start-line="165" selection-start-column="11" selection-end-line="165" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/exceptions/LoginException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="1" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#275#276#0" expanded="true" />
+            <element signature="e#319#320#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/oose/dea/controllerTests/TrackControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="28" column="57" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
+          <caret line="62" lean-forward="true" selection-end-line="191" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/oose/dea/controllerTests/PlaylistControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="21" column="39" selection-end-line="171" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/oose/dea/serviceTests/AuthorisationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="31" column="39" lean-forward="true" selection-end-line="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/oose/dea/DAOTests/LoginDAOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/database.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/exceptions/PlaylistException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/exceptions/TrackException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/services/PlaylistService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="15" column="36" lean-forward="true" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/controllers/PlaylistController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="82" column="9" lean-forward="true" selection-start-line="82" selection-start-column="9" selection-end-line="82" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/controllers/TrackController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/services/AuthorisationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/services/TrackService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="29" column="116" selection-start-line="29" selection-start-column="116" selection-end-line="29" selection-end-column="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/dataresources/TrackDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="40" column="86" selection-start-line="40" selection-start-column="86" selection-end-line="40" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.4.0/junit-platform-commons-1.4.0.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="304" selection-start-line="304" selection-end-line="304" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/dataresources/TokenDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="51" column="16" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/dataresources/PlaylistDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2312">
+          <caret line="148" column="27" selection-start-line="148" selection-start-column="27" selection-end-line="148" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-13.0.2/lib/src.zip!/java.base/jdk/internal/reflect/NativeMethodAccessorImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="68" column="33" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/dataresources/LoginDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="49" column="30" lean-forward="true" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-common/2.22.2/jersey-common-2.22.2.jar!/org/glassfish/jersey/internal/RuntimeDelegateImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.jar!/org/mockito/Mockito.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
+          <folding>
+            <element signature="e#3292#3293#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.jar!/org/mockito/internal/util/ObjectMethodsGuru.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.jar!/org/mockito/internal/creation/cglib/MethodInterceptorFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/controllers/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
           <folding>
             <element signature="e#547#548#0" expanded="true" />
             <element signature="e#595#596#0" expanded="true" />
@@ -1223,79 +1336,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/services/LoginService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="17" column="101" lean-forward="true" selection-start-line="17" selection-start-column="101" selection-end-line="17" selection-end-column="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/exceptions/LoginException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="1" lean-forward="true" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#275#276#0" expanded="true" />
-            <element signature="e#319#320#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-13.0.2/lib/src.zip!/java.sql/java/sql/SQLException.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="165" column="11" selection-start-line="165" selection-start-column="11" selection-end-line="165" selection-end-column="11" />
+          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/dataresources/TokenDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/oose/dea/controllerTests/LoginControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="95" column="19" selection-start-line="95" selection-start-column="19" selection-end-line="95" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/dataresources/LoginDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="28" column="87" selection-start-line="28" selection-start-column="73" selection-end-line="28" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/services/AuthorisationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
+        <state relative-caret-position="256">
+          <caret line="27" column="18" lean-forward="true" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/services/PlaylistService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="41" column="41" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/dataresources/PlaylistDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="95" column="63" lean-forward="true" selection-start-line="95" selection-start-column="63" selection-end-line="95" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/controllers/PlaylistController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="88" column="79" selection-start-line="88" selection-start-column="79" selection-end-line="88" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/oose/dea/resources/controllers/TrackController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="59" column="9" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
         </state>
       </provider>
     </entry>

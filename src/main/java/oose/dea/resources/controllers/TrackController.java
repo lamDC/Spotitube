@@ -4,6 +4,7 @@ import oose.dea.resources.dataresources.TrackDAO;
 import oose.dea.resources.dto.TrackRequestDto;
 import oose.dea.resources.dto.TrackResponseDto;
 import oose.dea.resources.exceptions.AuthorisationException;
+import oose.dea.resources.exceptions.TrackException;
 import oose.dea.resources.services.AuthorisationService;
 import oose.dea.resources.services.TrackService;
 
@@ -41,7 +42,9 @@ public class TrackController {
             TrackResponseDto trackResponseDto = trackService.performGeefBeschikbareTracks(id);
             return Response.ok().entity(trackResponseDto).build();
 
-        } catch (AuthorisationException e) {
+        } catch(AuthorisationException e) {
+            return e.toResponse(e);
+        } catch(TrackException e){
             return e.toResponse(e);
         }
     }
@@ -57,6 +60,8 @@ public class TrackController {
 
         } catch(AuthorisationException e){
             return e.toResponse(e);
+        } catch(TrackException e){
+            return e.toResponse(e);
         }
     }
 
@@ -64,12 +69,14 @@ public class TrackController {
     @Path("playlists/{playlist_id}/tracks/{id}")
     @Produces("application/json")
     public Response deleteTrack(@PathParam("playlist_id") int playlist_id, @PathParam("id") int track_id, @QueryParam("token") String token) throws SQLException {
-        if(authorisationService.performTrackAuthentication(token, track_id)) {
+        try{
+            authorisationService.performTrackAuthentication(token, track_id);
             TrackResponseDto trackResponseDto = trackService.performDeleteTrackVanPlaylist(playlist_id, track_id);
             return Response.ok().entity(trackResponseDto).build();
-        }
-        else {
-            return Response.status(403).build();
+        } catch(AuthorisationException e){
+            return e.toResponse(e);
+        } catch(TrackException e){
+            return e.toResponse(e);
         }
     }
 
@@ -82,8 +89,9 @@ public class TrackController {
             authorisationService.performPlaylistAuthorisation(token, playlist_id);
             TrackResponseDto trackResponseDto = trackService.performAddTrackToPlaylist(trackRequestDto, playlist_id);
             return Response.ok().entity(trackResponseDto).build();
-
-        } catch (AuthorisationException e) {
+        } catch(AuthorisationException e) {
+            return e.toResponse(e);
+        } catch(TrackException e){
             return e.toResponse(e);
         }
     }

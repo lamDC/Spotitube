@@ -25,14 +25,11 @@ public class PlaylistDAO {
 
         String sql = "SELECT DISTINCT P.PLAYLIST_ID, P.NAME, P.OWNER FROM PLAYLIST P " +
                 "LEFT OUTER JOIN TRACK_IN_PLAYLIST TIP ON P.PLAYLIST_ID = TIP.PLAYLIST_ID";
-        try{
-            return leesPlaylists(sql);
-        } catch(SQLException e){
-            throw new PlaylistException(400);
-        }
+
+        return leesPlaylists(sql);
     }
 
-    public PlaylistResponseDto editPlaylist(PlaylistRequestDto playlistRequestDto, int id) throws SQLException, PlaylistException {
+    public PlaylistResponseDto editPlaylist(PlaylistRequestDto playlistRequestDto, int id) throws PlaylistException {
         PreparedStatement st = null;
         java.sql.Connection cnEmps = connection;
 
@@ -40,22 +37,19 @@ public class PlaylistDAO {
         try {
             st = cnEmps.prepareStatement(deleteSql);
             st.setString(1, playlistRequestDto.getName());
+            st.execute();
         } catch (SQLException e) {
-            e.printStackTrace();
+            throw new PlaylistException(e.getErrorCode());
         }
-        st.execute();
 
         String sql = "SELECT DISTINCT P.PLAYLIST_ID, P.NAME, P.OWNER FROM PLAYLIST P " +
                 "LEFT OUTER JOIN TRACK_IN_PLAYLIST TIP ON P.PLAYLIST_ID = TIP.PLAYLIST_ID";
 
-        try{
-            return leesPlaylists(sql);
-        } catch(SQLException e){
-            throw new PlaylistException(400);
-        }
+        return leesPlaylists(sql);
+
     }
 
-    public PlaylistResponseDto deletePlaylistFromDatabase(int id) throws SQLException, PlaylistException {
+    public PlaylistResponseDto deletePlaylistFromDatabase(int id) throws PlaylistException {
         ResultSet resultSet = null;
         PreparedStatement st = null;
         java.sql.Connection cnEmps = connection;
@@ -63,29 +57,26 @@ public class PlaylistDAO {
         String deleteSql = "DELETE FROM TRACK_IN_PLAYLIST WHERE PLAYLIST_ID = " + id;
         try {
             st = cnEmps.prepareStatement(deleteSql);
+            st.execute();
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        st.execute();
 
         String deleteSql2 = "DELETE FROM PLAYLIST WHERE PLAYLIST_ID = " + id;
         try {
             st = cnEmps.prepareStatement(deleteSql2);
+            st.execute();
         } catch (SQLException e) {
-            e.printStackTrace();
+            throw new PlaylistException(e.getErrorCode());
         }
-        st.execute();
 
         String sql = "SELECT DISTINCT P.PLAYLIST_ID, P.NAME, P.OWNER FROM PLAYLIST P " +
         "LEFT OUTER JOIN TRACK_IN_PLAYLIST TIP ON P.PLAYLIST_ID = TIP.PLAYLIST_ID";
 
-        try{
-            return leesPlaylists(sql);
-        } catch(SQLException e){
-            throw new PlaylistException(400);
-        }
+        return leesPlaylists(sql);
+
     }
-    public PlaylistResponseDto addPlaylistToDatabase(PlaylistRequestDto playlistRequestDto, String token) throws SQLException, PlaylistException {
+    public PlaylistResponseDto addPlaylistToDatabase(PlaylistRequestDto playlistRequestDto, String token) throws PlaylistException {
         String user = geefUserVanToken(token);
         String playlistName = playlistRequestDto.getName();
 
@@ -99,21 +90,18 @@ public class PlaylistDAO {
             st = cnEmps.prepareStatement(addSql);
             st.setString(1, user);
             st.setString(2, playlistName);
+            st.execute();
         } catch (SQLException e) {
-            e.printStackTrace();
+            throw new PlaylistException(e.getErrorCode());
         }
-
-        st.execute();
 
         String sql = "SELECT DISTINCT P.PLAYLIST_ID, P.NAME, P.OWNER FROM PLAYLIST P" +
                 " LEFT OUTER JOIN TRACK_IN_PLAYLIST TIP ON P.PLAYLIST_ID = TIP.PLAYLIST_ID";
-        try{
-            return leesPlaylists(sql);
-        } catch(SQLException e){
-            throw new PlaylistException(400);
-        }    }
 
-    public PlaylistResponseDto leesPlaylists(String sql) throws SQLException {
+        return leesPlaylists(sql);
+    }
+
+    public PlaylistResponseDto leesPlaylists(String sql) throws PlaylistException {
         ResultSet resultSet = null;
         PreparedStatement st = null;
         java.sql.Connection cnEmps = connection;
@@ -123,32 +111,32 @@ public class PlaylistDAO {
 
         try {
             st = cnEmps.prepareStatement(sql);
+
+            resultSet = st.executeQuery();
+            while (resultSet.next())
+            {
+                PlaylistModel playlist = new PlaylistModel();
+                playlist.setId(resultSet.getInt("PLAYLIST_ID"));
+                playlist.setName(resultSet.getString("NAME"));
+                if(resultSet.getBoolean("OWNER")){
+                    playlist.setOwner(true);
+                }
+                else {
+                    playlist.setOwner(false);
+                }
+                playlist.setTracks(new ArrayList<>());
+                playlistArray.add(playlist);
+
+            }
+            playlistResponseDto.setLength(6445);
+            playlistResponseDto.setPlaylists(playlistArray);
+
+            return playlistResponseDto;
         } catch (SQLException e) {
-            e.printStackTrace();
+            throw new PlaylistException(e.getErrorCode());
         }
-
-        resultSet = st.executeQuery();
-        while (resultSet.next())
-        {
-            PlaylistModel playlist = new PlaylistModel();
-            playlist.setId(resultSet.getInt("PLAYLIST_ID"));
-            playlist.setName(resultSet.getString("NAME"));
-            if(resultSet.getBoolean("OWNER")){
-                playlist.setOwner(true);
-            }
-            else {
-                playlist.setOwner(false);
-            }
-            playlist.setTracks(new ArrayList<>());
-            playlistArray.add(playlist);
-
-        }
-        playlistResponseDto.setLength(6445);
-        playlistResponseDto.setPlaylists(playlistArray);
-
-        return playlistResponseDto;
     }
-    public String geefUserVanToken(String token) throws SQLException {
+    public String geefUserVanToken(String token) throws PlaylistException {
         ResultSet resultSet = null;
         PreparedStatement st = null;
         java.sql.Connection cnEmps = connection;
@@ -157,17 +145,14 @@ public class PlaylistDAO {
         try {
             st = cnEmps.prepareStatement(sql);
             st.setString(1, token);
+            resultSet = st.executeQuery();
+            while (resultSet.next())
+            {
+                user = resultSet.getString("USERNAME");
+            }
+            return user;
         } catch (SQLException e) {
-            e.printStackTrace();
+            throw new PlaylistException(e.getErrorCode());
         }
-        resultSet = st.executeQuery();
-        while (resultSet.next())
-        {
-            user = resultSet.getString("USERNAME");
-        }
-
-        return user;
     }
-
-
 }

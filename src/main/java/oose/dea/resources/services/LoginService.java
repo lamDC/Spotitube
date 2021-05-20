@@ -15,7 +15,7 @@ public class LoginService {
 
     private LoginDAO loginDAO;
 
-    public UserModel performFirstLogin(LoginRequestDto request) throws SQLException, LoginException {
-    return loginDAO.login(request);
+    public UserModel performLogin(LoginRequestDto request) throws LoginException {
+        return loginDAO.login(request);
     }
 }

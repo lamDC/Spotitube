@@ -22,7 +22,7 @@ public class TokenDAO {
         connection = databaseConnection.getConnection();
     }
 
-    public void performAuthentication(String token) throws SQLException, AuthorisationException {
+    public void performAuthentication(String token) throws AuthorisationException {
         boolean isTokenVanEenUser = false;
         ResultSet resultSet = null;
         PreparedStatement st = null;
@@ -33,22 +33,23 @@ public class TokenDAO {
         try {
             st = cnEmps.prepareStatement(sql);
             st.setString(1, token);
-        } catch (SQLException e) {
-            throw new SQLException(e);
-        }
-        resultSet = st.executeQuery();
-        while (resultSet.next())
-        {
-            String     tokenDB      = resultSet.getString("TOKEN");
-            if(tokenDB.equals(token)){
-                isTokenVanEenUser = true;
+            resultSet = st.executeQuery();
+            while (resultSet.next())
+            {
+                String     tokenDB      = resultSet.getString("TOKEN");
+                if(tokenDB.equals(token)){
+                    isTokenVanEenUser = true;
+                }
             }
+        } catch (SQLException e) {
+            throw new AuthorisationException(e.getErrorCode());
         }
+
         if(!isTokenVanEenUser)
             throw new AuthorisationException(403);
     }
 
-    public void generateTokenForUser(LoginRequestDto request) throws SQLException {
+    public void generateTokenForUser(LoginRequestDto request) throws AuthorisationException {
         TokenModel tokenModel = new TokenModel();
         TokenGenerator util = new TokenGenerator();
 
@@ -63,14 +64,14 @@ public class TokenDAO {
             st = cnEmps.prepareStatement(deleteSql);
             st.setString(1, tokenModel.getToken());
             st.setString(2, request.getUser());
+            st.execute();
         } catch (SQLException e) {
-            e.printStackTrace();
+            throw new AuthorisationException(e.getErrorCode());
         }
-        st.execute();
 
     }
 
-    public String getUserByToken(String token) throws SQLException {
+    public String getUserByToken(String token) throws AuthorisationException {
         ResultSet resultSet = null;
         PreparedStatement st = null;
         java.sql.Connection cnEmps = connection;
@@ -79,21 +80,20 @@ public class TokenDAO {
         try {
             st = cnEmps.prepareStatement(sql);
             st.setString(1, token);
+            UserModel user  = new UserModel();
+            user.setToken(token);
+            resultSet = st.executeQuery();
+            while (resultSet.next())
+            {
+                user.setUser(resultSet.getString("USERNAME"));
+            }
+            return user.getUser();
         } catch (SQLException e) {
-            e.printStackTrace();
+            throw new AuthorisationException(e.getErrorCode());
         }
-
-        UserModel user  = new UserModel();
-        user.setToken(token);
-        resultSet = st.executeQuery();
-        while (resultSet.next())
-        {
-            user.setUser(resultSet.getString("USERNAME"));
-        }
-        return user.getUser();
     }
 
-    public boolean playlistAuthorisation(String token, int playlist_id) throws SQLException, AuthorisationException {
+    public boolean playlistAuthorisation(String token, int playlist_id) throws AuthorisationException {
         String user = getUserByToken(token);
         boolean isTokenVanUser = false;
 
@@ -104,26 +104,27 @@ public class TokenDAO {
 
         try {
             st = cnEmps.prepareStatement(sql);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        resultSet = st.executeQuery();
-        while (resultSet.next())
-        {
-            String playlistUser = resultSet.getString("USERNAME");
-            if(playlistUser.equals(user)){
-                boolean owner = resultSet.getBoolean("OWNER");
-                if(owner){
-                    isTokenVanUser = true;
+            resultSet = st.executeQuery();
+            while (resultSet.next())
+            {
+                String playlistUser = resultSet.getString("USERNAME");
+                if(playlistUser.equals(user)){
+                    boolean owner = resultSet.getBoolean("OWNER");
+                    if(owner){
+                        isTokenVanUser = true;
+                    }
                 }
             }
+        } catch (SQLException e) {
+            throw new AuthorisationException(e.getErrorCode());
         }
+
         if(!isTokenVanUser)
             throw new AuthorisationException(403);
         return isTokenVanUser;
     }
 
-    public boolean trackAuthentication(String token, int track_id) throws SQLException {
+    public boolean trackAuthentication(String token, int track_id) throws AuthorisationException {
         String user = getUserByToken(token);
         boolean isTokenVanUser = false;
 
@@ -138,17 +139,22 @@ public class TokenDAO {
         try {
             st = cnEmps.prepareStatement(sql);
             st.setString(1, user);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        resultSet = st.executeQuery();
-        while (resultSet.next())
-        {
-            boolean owner = resultSet.getBoolean("OWNER");
-            if(owner){
-                isTokenVanUser = true;
+            resultSet = st.executeQuery();
+            while (resultSet.next())
+            {
+                boolean owner = resultSet.getBoolean("OWNER");
+                if(owner){
+                    isTokenVanUser = true;
+                }
             }
+        } catch (SQLException e) {
+            throw new AuthorisationException(e.getErrorCode());
         }
+
+        if(!isTokenVanUser){
+            throw new AuthorisationException(403);
+        }
+
         return isTokenVanUser;
     }
 

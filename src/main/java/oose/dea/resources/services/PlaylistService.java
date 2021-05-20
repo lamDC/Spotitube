@@ -20,30 +20,15 @@ public class PlaylistService {
     }
 
     public PlaylistResponseDto performDeletePlaylistFromDatabase(int id) throws PlaylistException {
-        try{
-            return playlistDAO.deletePlaylistFromDatabase(id);
-        } catch(SQLException e){
-            e.printStackTrace();
-            return null;
-        }
+        return playlistDAO.deletePlaylistFromDatabase(id);
     }
 
     public PlaylistResponseDto performEditPlaylist(PlaylistRequestDto playlistRequestDto, int id) throws PlaylistException {
-        try{
-            return playlistDAO.editPlaylist(playlistRequestDto, id);
-        } catch(SQLException e){
-            e.printStackTrace();
-            return null;
-        }
+        return playlistDAO.editPlaylist(playlistRequestDto, id);
     }
 
     public PlaylistResponseDto performAddPlaylistToDatabase(PlaylistRequestDto playlistRequestDto, String token) throws PlaylistException {
-        try{
-            return playlistDAO.addPlaylistToDatabase(playlistRequestDto, token);
-        } catch(SQLException e){
-            e.printStackTrace();
-            return null;
-        }
+        return playlistDAO.addPlaylistToDatabase(playlistRequestDto, token);
     }
 
-    }
+}

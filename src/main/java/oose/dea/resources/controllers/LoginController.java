@@ -24,9 +24,9 @@ public class LoginController {
     @POST
     @Path("/")
     @Consumes("application/json")
-    public Response login(LoginRequestDto request) throws SQLException {
+    public Response login(LoginRequestDto request){
         try{
-            UserModel userModel = loginService.performFirstLogin(request);
+            UserModel userModel = loginService.performLogin(request);
             return Response.ok().entity(userModel).build();
         }
         catch(LoginException e){
